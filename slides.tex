@@ -1,12 +1,14 @@
 % Beamer Template based on A&M PolSci by Miwa Nakajo. October 24, 2009
-% Modified by Hengjie LIU. Jul. 5th, 2024
+% Modified by Kouketu Lyu. Jan. 6th, 2025 without any warnings.
 % This templater is used for the persentation in ISEE of KYUSHU UNIVERSITY.
 
 \documentclass[]{beamer} % option [handout]or[trans]
 \usepackage{hyperref}
+% if don't disable the commands \translate, there will be a warning.
+% I can't solve this problem, so did like below. If you can, try it!
 \pdfstringdefDisableCommands{%
     \def\translate#1{#1}
-}
+}  
 \usepackage{multirow}
 \usepackage{graphicx} % for A&M Logo
 \usepackage[round]{natbib}
