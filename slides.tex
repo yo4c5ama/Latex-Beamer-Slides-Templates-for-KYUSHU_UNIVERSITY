@@ -3,6 +3,10 @@
 % This templater is used for the persentation in ISEE of KYUSHU UNIVERSITY.
 
 \documentclass[]{beamer} % option [handout]or[trans]
+\usepackage{hyperref}
+\pdfstringdefDisableCommands{%
+    \def\translate#1{#1}
+}
 \usepackage{multirow}
 \usepackage{graphicx} % for A&M Logo
 \usepackage[round]{natbib}
@@ -35,7 +39,7 @@
     \addtocounter{framenumber}{\value{framenumberappendix}} 
 }
 % \usepackage[paperwidth=12cm,paperheight=5cm]{geometry}
-\title[short_title]{Your Title}
+\title[short\_title]{Your Title}
 
 % \subtitle{}
 \author{First FAMILY}
@@ -44,7 +48,7 @@
     %\institute{\inst{1}Texas A\&M University \and \inst{2}Other University}
 \date{\small{Jul. 5th, 2024}}
     %\date{POLS601, \today}
-\titlegraphic{\includegraphics[width=0.3\paperwidth]{logo/kyushu_isee_logo.pdf}}
+\titlegraphic{\includegraphics[width=0.3\paperwidth]{logo/kyushu\_isee\_logo.pdf}}
 
 \useinnertheme{default}
     % or {rectangles}, {circles}, {rounded}
@@ -171,7 +175,7 @@ We use the German-Upper Sorbian (de-hsb) parallel corpus from WMT20\footnote{htt
 \section{}
 \frame
 {\frametitle{Related works: Back Translation}
-
+% nothing
 % \only<1>{
 % \begin{figure}
 %   \centering
@@ -206,7 +210,7 @@ We use the German-Upper Sorbian (de-hsb) parallel corpus from WMT20\footnote{htt
   \includegraphics[width=0.7\textwidth, keepaspectratio]{figure/BT/backtranslation.pdf}
   \caption{\citep{sennrich-etal-2016-improving}}
 \end{figure} 
-} 
+ } 
 
 % References
 \begin{frame}[allowframebreaks]{References}
